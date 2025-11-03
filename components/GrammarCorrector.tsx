@@ -1,8 +1,8 @@
 
 import React, { useState, useCallback } from 'react';
-import { correctGrammar } from '../services/geminiService';
-import ResultCard from './common/ResultCard';
-import LoadingSpinner from './common/LoadingSpinner';
+import { correctGrammar } from '../services/geminiService.ts';
+import ResultCard from './common/ResultCard.tsx';
+import LoadingSpinner from './common/LoadingSpinner.tsx';
 
 const GrammarCorrector: React.FC = () => {
     const [inputText, setInputText] = useState<string>('');

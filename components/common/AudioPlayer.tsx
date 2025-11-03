@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useRef } from 'react';
-import { decode, decodeAudioData } from '../../utils';
+import { decode, decodeAudioData } from '../../utils.ts';
 
 interface AudioPlayerProps {
     audioData: string;

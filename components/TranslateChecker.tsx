@@ -1,8 +1,8 @@
 
 import React, { useState, useCallback } from 'react';
-import { translateAndCheck } from '../services/geminiService';
-import ResultCard from './common/ResultCard';
-import LoadingSpinner from './common/LoadingSpinner';
+import { translateAndCheck } from '../services/geminiService.ts';
+import ResultCard from './common/ResultCard.tsx';
+import LoadingSpinner from './common/LoadingSpinner.tsx';
 
 const TranslateChecker: React.FC = () => {
     const [inputText, setInputText] = useState<string>('');

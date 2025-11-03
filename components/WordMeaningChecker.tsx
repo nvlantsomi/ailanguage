@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
-import { getWordMeaning, WordMeaningResult } from '../services/geminiService';
-import ResultCard from './common/ResultCard';
-import LoadingSpinner from './common/LoadingSpinner';
-import { wordList } from '../../data/wordlist';
+import { getWordMeaning, WordMeaningResult } from '../services/geminiService.ts';
+import ResultCard from './common/ResultCard.tsx';
+import LoadingSpinner from './common/LoadingSpinner.tsx';
+import { wordList } from '../../data/wordlist.ts';
 
 const WordMeaningChecker: React.FC = () => {
     const [inputText, setInputText] = useState<string>('');

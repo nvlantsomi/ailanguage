@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
-import { AppMode } from './types';
-import TranslateChecker from './components/TranslateChecker';
-import GrammarCorrector from './components/GrammarCorrector';
-import WordMeaningChecker from './components/WordMeaningChecker';
+import { AppMode } from './types.ts';
+import TranslateChecker from './components/TranslateChecker.tsx';
+import GrammarCorrector from './components/GrammarCorrector.tsx';
+import WordMeaningChecker from './components/WordMeaningChecker.tsx';
 
 // FIX: Replaced JSX.Element with React.ReactNode to resolve TypeScript error "Cannot find namespace 'JSX'".
 const TabButton = ({ label, icon, isActive, onClick }: { label: string, icon: React.ReactNode, isActive: boolean, onClick: () => void }) => (

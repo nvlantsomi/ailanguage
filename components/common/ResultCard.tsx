@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 import { marked } from 'marked';
-import LoadingSpinner from './LoadingSpinner';
-import AudioPlayer from './AudioPlayer';
-import CopyButton from './CopyButton';
+import LoadingSpinner from './LoadingSpinner.tsx';
+import AudioPlayer from './AudioPlayer.tsx';
+import CopyButton from './CopyButton.tsx';
 
 interface WordMeaningResult {
     text: string;
